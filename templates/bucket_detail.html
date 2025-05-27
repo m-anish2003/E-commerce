@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}{{ bucket_name }} | Puja Hub{% endblock %}
+
+{% block content %}
+<div class="container mx-auto py-8 px-4 max-w-4xl">
+  <h1 id="bucket-name" class="text-3xl font-noto text-maroon mb-8">Diwali Essentials</h1>
+  
+  <!-- Items List -->
+  <div class="space-y-4" id="items-container">
+    <!-- Sample Static Item -->
+    <div class="bg-white p-4 rounded-lg shadow flex justify-between items-center">
+      <div>
+        <h3 class="font-bold text-lg">Brass Diya Set</h3>
+        <p class="text-maroon">₹299</p>
+      </div>
+      <div class="flex items-center gap-2">
+        <button class="qty-btn minus px-3 py-1 bg-gray-200 rounded">-</button>
+        <span class="quantity">1</span>
+        <button class="qty-btn plus px-3 py-1 bg-gray-200 rounded">+</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Checkout Button -->
+  <button class="bg-gold text-maroon px-6 py-3 rounded-lg mt-8 font-bold">
+    Add Entire Bucket to Cart (₹498)
+  </button>
+</div>
+{% endblock %}

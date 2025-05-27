@@ -1,0 +1,77 @@
+/* Hero Section */
+#home {
+    position: relative;
+    height: 80vh;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Slider */
+.slider {
+    height: 100%;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.slide.active {
+    opacity: 1;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Hero Content */
+#home .container {
+    position: relative;
+    z-index: 3;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6rem 1rem;
+}
+#home h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+#home p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+#home a {
+    background-color: #FFD700;
+    color: #800000;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+#home a:hover {
+    background-color: #facc15;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    #home {
+        height: 60vh;
+    }
+}

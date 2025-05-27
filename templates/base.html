@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Puja & Festive Hub{% endblock %}</title>
+    
+    <!-- Core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link href="/static/css/globals.css" rel="stylesheet">
+    <link href="/static/css/navbar.css" rel="stylesheet">
+    <link href="/static/css/footer.css" rel="stylesheet">
+    <link href="/static/css/magic.css" rel="stylesheet">
+    <link href="static/css/catalog.css" rel="stylesheet">
+    
+    {% block extra_css %}{% endblock %}
+</head>
+<body class="bg-white font-poppins">
+    <!-- Same Navbar as index.html -->
+    <nav class="bg-saffron sticky top-0 z-10 p-2">
+        <div class="flex items-center gap-4 max-w-7xl mx-auto">
+            <a href="/"><img src="/static/images/index/logo_reloaded.png" alt="PujaHub" class="h-12 w-auto"></a>
+            <div class="flex-1 flex">
+                <input type="text" placeholder="Search diyas, idols..." class="w-full py-2 px-4 rounded-l border-0">
+                <button class="bg-gold px-4 rounded-r">🔍</button>
+            </div>
+            <div class="flex gap-4">
+                <a href="/account" class="text-white hover:text-gold">Account</a>
+                <a href="/cart" class="text-white hover:text-gold">🛒 Cart (0)</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Block -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Same Footer as index.html -->
+    <footer class="bg-maroon text-white text-center py-6">
+        <p>© 2025 Puja & Festive Hub. Crafted with devotion.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/static/js/index.js"></script>
+    <script src="/static/js/catalog.js"></script>
+    <script src="/static/js/magic.js"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

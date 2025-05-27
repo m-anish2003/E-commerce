@@ -1,0 +1,26 @@
+/* Navbar */
+nav {
+    background: #FF9933;
+    padding: 1rem;
+}
+nav .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #FFD700;
+}

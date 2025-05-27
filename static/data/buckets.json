@@ -1,0 +1,11 @@
+[
+  {
+    "id": "diwali",
+    "name": "Diwali Essentials",
+    "image": "/static/images/buckets/diwali.jpg",
+    "items": [
+      {"name": "Brass Diya Set", "price": 299, "qty": 1},
+      {"name": "Sandalwood Incense", "price": 199, "qty": 2}
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+/* Fonts */
+.font-noto {
+    font-family: 'Noto Serif', serif;
+}
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Colors */
+.bg-saffron {
+    background-color: #FF9933;
+}
+.bg-gold {
+    background-color: #FFD700;
+}
+.text-maroon {
+    color: #800000;
+}
+.bg-maroon {
+    background-color: #800000;
+}
+.text-gold {
+    color: #FFD700;
+}
+.bg-gray-100 {
+    background-color: #f3f4f6;
+}
+.text-gray-600 {
+    color: #4b5563;
+}
+.text-white {
+    color: #ffffff;
+}

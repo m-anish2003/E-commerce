@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puja & Festive Hub</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link href="/static/css/globals.css" rel="stylesheet">
+<link href="/static/css/navbar.css" rel="stylesheet">
+<link href="/static/css/hero.css" rel="stylesheet">
+<link href="/static/css/products.css" rel="stylesheet">
+<link href="/static/css/footer.css" rel="stylesheet">
+<link href="/static/css/magic.css" rel="stylesheet">
+</head>
+<body class="bg-white font-poppins">
+    <!-- Navbar -->
+    <nav class="bg-saffron sticky top-0 z-10 p-2">
+  <div class="flex items-center gap-4 max-w-7xl mx-auto">
+    <!-- Logo -->
+    <img src="static/images/index/logo_reloaded.png" alt="PujaHub" class="h-12 w-auto">
+
+    <!-- Search Bar -->
+    <div class="flex-1 flex">
+      <input type="text" placeholder="Search diyas, idols..." 
+             class="w-full py-2 px-4 rounded-l border-0">
+      <button class="bg-gold px-4 rounded-r">
+        🔍
+      </button>
+    </div>
+
+    <!-- Account & Cart -->
+    <div class="flex gap-4">
+      <button class="text-white">Account</button>
+      <button class="text-white">🛒 Cart (0)</button>
+    </div>
+  </div>
+</nav>
+
+    <!-- Hero Section with Slider -->
+    <section class="relative h-96 overflow-hidden">
+  <!-- Slider Images (existing code) -->
+  <div class="slider">
+    <div class="slide"><img src="static/images/index/cover3.jpg" alt="Diwali Offer"></div>
+    <!-- Add more slides -->
+  </div>
+
+  <!-- Overlay Content -->
+  <div class="absolute bottom-20 left-10 text-white">
+    <h2 class="text-4xl font-bold">Festive Bucket</h2>
+    <a href="/catalog" class="bg-gold text-maroon px-6 py-2 rounded-lg">
+  Explore Catalogue
+</a>
+  </div>
+</section>
+
+    <!-- Featured Products -->
+    <section id="products" class="py-16 bg-gray-100">
+        <div class="container mx-auto">
+            <h3 class="text-3xl font-bold font-noto text-maroon text-center mb-10">Featured Puja Items</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Product Card 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="static/images/index/brassdiya.jpg" alt="Brass Diya" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-lg font-semibold font-noto">Brass Diya</h4>
+                        <p class="text-gray-600">₹299</p>
+                        <button class="bg-saffron text-white px-4 py-2 mt-2 rounded hover:bg-yellow-600 transition">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="static/images/index/sandalwood.jpg" alt="Sandalwood Incense" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-lg font-semibold font-noto">Sandalwood Incense</h4>
+                        <p class="text-gray-600">₹199</p>
+                        <button class="bg-saffron text-white px-4 py-2 mt-2 rounded hover:bg-yellow-600 transition">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="static/images/index/idol.jpg" alt="Eco-Friendly Ganesh Idol" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-lg font-semibold font-noto">Eco-Friendly Ganesh Idol</h4>
+                        <p class="text-gray-600">₹499</p>
+                        <button class="bg-saffron text-white px-4 py-2 mt-2 rounded hover:bg-yellow-600 transition">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="static/images/index/thali.jpg" alt="Puja Thali" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-lg font-semibold font-noto">Puja Thali</h4>
+                        <p class="text-gray-600">₹399</p>
+                        <button class="bg-saffron text-white px-4 py-2 mt-2 rounded hover:bg-yellow-600 transition">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-maroon text-white text-center py-6">
+        <p class="font-poppins">© 2025 Puja & Festive Hub. Crafted with devotion.</p>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="/static/js/index.js"></script>
+    <script src="/static/js/magic.js"></script>
+</body>
+</html>
